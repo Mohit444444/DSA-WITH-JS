@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>binary search with iteratuve appraooch</title>
+    <script>
+      let data = [1, 4, 5, 8];
+      let find = 5;
+      let start = 0;
+      let end = data.length - 1;
+      let position = undefined;
+
+      while (start <= end) {
+        let mid = Math.floor(start + end / 2);
+        console.warn(data[mid]);
+        if (data[mid] === find) {
+          position = mid;
+          break;
+        } else if (data[mid] < find) {
+          start = mid + 1;
+        } else {
+          end = mid - 1;
+        }
+      }
+      console.warn(position);
+    </script>
+    /
+  </head>
+  <body>
+    <h1>binary search with iterative appraoch</h1>
+  </body>
+</html>

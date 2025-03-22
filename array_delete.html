@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array delete</title>
+    <script>
+      // let data = [12, 34, 33, 23, 24, 35, 87];
+      // let position = 3;
+      // for(let i=position;i<data.length-1;i++){
+      //     data[i]=data[i+1]
+      // }
+      // data.length = data.length-1
+      // console.warn(data);
+      function deleteEl() {
+        let data = [12, 34, 33, 23, 24, 35, 87];
+        let position = document.getElementById("position").value;
+        position = parseInt(position);
+        for (let i = position; i < data.length - 1; i++) {
+          data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        console.warn(data);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter value" id="position" />
+    <button onclick="deleteEl()">Remove Element</button>
+  </body>
+</html>

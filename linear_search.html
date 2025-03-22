@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>linear search with javascript</title>
+    <script>
+      let data =[2, 10, 23, 33, 56, 21, 43, 98];
+      let find=33;
+      let position=undefined;
+
+      for(let i=0;i<=data.length;i++){
+          if(data[i] == find){
+              position = i;
+              break;
+          }
+      }
+      console.warn(position);
+      if(!position){
+        alert("value not fout");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Linear Search with javascript</h1>
+  </body>
+</html>
